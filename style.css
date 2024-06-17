@@ -36,6 +36,7 @@
     height: 100vh;
     background-color: #1b263b;
     padding-top: 20vh;
+    padding-bottom: 5vh;
     color: #e0e1dd;
 }
 .welcome{
@@ -59,14 +60,91 @@
 #greetings p,#about p{
     font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
     font-size: 1.5rem;
 }
-@media screen and (max-width : 600px){
+#projects{
+    background-color: #415a77;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+#projects h1{
+    text-align: center;
+    /* padding: 50px; */
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 10;
+    font-style: normal;
+    font-size: 3rem ;
+    color: #e0e1dd;
+}
+.projects-list{
+    width: 70vw;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects-list a{
+    text-decoration: none;
+    text-align: center;
+    font-family:"PT Sans Narrow", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #073b4c;
+}
+.projects-list span{
+    padding: 0px 5px;
+}
+#project-item{
+    width: 20vw;
+    height: 200px;
+    background-color: #778da9;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width : 810px){
     #greetings h1,#about h3{
+        font-size: 2.5rem;
+    }
+    #greetings p,#about p{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width : 600px){
+    #greetings h1,#about h3,#projects h1{
         font-size: 2rem;
     }
     #greetings p,#about p{
         font-size: 1rem;
+    }
+}
+@media screen and (max-width : 1000px){
+    .projects-list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #project-item{
+        width: 50vw;
+        height: 200px;
+    }
+    #projects{
+        background-color: #415a77;
+        width: 100vw;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
