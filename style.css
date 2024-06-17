@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=PT+Sans+Narrow:wght@400;700&family=Racing+Sans+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=M+PLUS+Rounded+1c&family=PT+Sans+Narrow:wght@400;700&family=Racing+Sans+One&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: #0d1b2a;
+    width: 100vw;
+    height: 5vh;
+    padding: 30px;
+    position: fixed;
+}
+.nav{
+    display: flex;
+    justify-content : flex-start;
+    align-items: center;
+    gap: 10vw;
+}
+#nav-link a{
+    text-decoration: none;
+    font-family:"PT Sans Narrow", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    color : #778da9;
+}
+#welcome-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1b263b;
+    padding-top: 20vh;
+    color: #e0e1dd;
+}
+.welcome{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+#greetings h1,#about h3{
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem ;
+    padding-bottom: 30px;
+    padding-left: 5px;
+}
+#greetings p,#about p{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 1.5rem;
+}
+@media screen and (max-width : 600px){
+    #greetings h1,#about h3{
+        font-size: 2rem;
+    }
+    #greetings p,#about p{
+        font-size: 1rem;
+    }
+}
