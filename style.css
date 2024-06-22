@@ -31,7 +31,7 @@
     font-style: normal;
     color : #778da9;
 }
-#welcome-section{
+#welcome_section{
     width: 100vw;
     height: 100vh;
     background-color: #1b263b;
@@ -73,9 +73,9 @@
     align-items: center;
     gap: 100px;
 }
-#projects h1{
+.heading h1{
     text-align: center;
-    /* padding: 50px; */
+    padding: 0px 10px;
     font-family: "Racing Sans One", sans-serif;
     font-weight: 10;
     font-style: normal;
@@ -111,6 +111,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#contact{
+    background-color: #778da9;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    gap: 50px;
+}
+.contact_heading h1{
+    text-align: center;
+    padding: 0px 10px;
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 10;
+    font-style: normal;
+    font-size: 3rem ;
+    color :#1b263b;
+}
+#profile_link svg{
+    width: 50px;
+    fill: #1b263b;
+}
+#profile_link a{
+    text-decoration: none;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+   font-weight: 400;
+   font-style: italic;
+    font-size: 1.5rem;
+    color: #1b263b;
+    padding: 0px 15px;
+}
+#profile_link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 0px;
 }
 @media screen and (max-width : 810px){
     #greetings h1,#about h3{
